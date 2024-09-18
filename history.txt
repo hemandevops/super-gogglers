@@ -1,0 +1,104 @@
+    1  sudo -i
+    2  sudo apt update
+    3  sudo apt install git
+    4  ssh-keygen
+    5  ssh-keygen -t rsa
+    6  ls -a
+    7  ls .ssh
+    8  cat .ssh/id_rsa.pub[A
+    9  git clone git@github.com:hemandevops/super-gogglers.git
+   10  ls
+   11  cd super-gogglers/
+   12  git branch 
+   13  git clone git@github.com:hemandevops/super-gogglers.git
+   14  git add #!/bin/bash
+   15  # Website setup script
+   16  # Define variables for URLs, file names, and repository information.
+   17  URL=https://www.tooplate.com/zip-templates/2118_chilling_cafe.zip
+   18  FILE=2118_chilling_cafe
+   19  GIT_URL=git@github.com:username/username.github.io.git
+   20  GIT_REPO=username.github.io #use your github username 
+   21  PKG=apt
+   22  EMAIL=admin123@gmail.com
+   23  USER=admin
+   24  # Install necessary packages (e.g., git, wget, unzip) using the package manager specified in PKG.
+   25  sudo $PKG install git wget unzip -y
+   26  # Create a directory structure for Git and navigate to it.
+   27  mkdir -p ~/git
+   28  cd ~/git
+   29  # Clone the specified Git repository.
+   30  git clone $GIT_URL
+   31  # Remove the contents of the Git repository directory.
+   32  rm -rf $GIT_REPO/*
+   33  # Download a file from the specified URL and unzip it.
+   34  wget $URL
+   35  unzip $FILE.zip
+   36  # Copy the unzipped files to the Git repository directory.
+   37  cp -r $FILE/* $GIT_REPO/
+   38  # Navigate to the Git repository directory.
+   39  cd $GIT_REPO
+   40  # Configure Git user email and name globally.
+   41  git config --global user.email "$EMAIL"
+   42  git config --global user.name "$USER"
+   43  # Add all changes, commit with the current date, and push to the remote repository.
+   44  git add .
+   45  git commit -m "$(date)"
+   46  git push
+   47  # Remove the temporary git directory.
+   48  rm -rf ~/git
+   49  git push
+   50  ls
+   51  pull
+   52  ls
+   53  git config advice.addEmptyPathspec false
+   54  /home/ubuntu
+   55  ls
+   56  cat super-gogglers
+   57  git branch
+   58  exit
+   59  ls
+   60  cd super-gogglers/
+   61  git init
+   62  ls
+   63  rm super-gogglers/
+   64  ls
+   65  sudo rm -r 
+   66  sudo rm -r super-gogglers README.md
+   67  ls
+   68  cd ..
+   69  vim web.sh
+   70  sudo chmod +x web.sh
+   71  ls -l
+   72  ./web.sh 
+   73  apt update
+   74  sudo apt update
+   75  sudo apt insatall git
+   76  sudo apt install git
+   77  git --help
+   78  ls -a
+   79  ls .ssh
+   80  cat .ssh/id_rsa.pub
+   81  git clone git@github.com:hemandevops/super-gogglers.git
+   82  ls
+   83  cd super-gogglers/
+   84  ls
+   85  touch sample.txt
+   86  git status
+   87  git add sample.txt
+   88  git status
+   89  git commit -m "Added sample.txt for practice"
+   90  git push
+   91  touch sample{1..10}.txt
+   92  ls
+   93  git status
+   94  git add .
+   95  git status
+   96  git commit -m "sending all files at a time"
+   97  git push
+   98  ls
+   99  git pull
+  100  cat sample.txt
+  101  git pull
+  102  git add .
+  103  git commit -m "saving history"
+  104  history > history.txt
