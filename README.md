@@ -1,2 +1,0 @@
-# super-gogglers
-Learning Git
